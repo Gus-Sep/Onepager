@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  color: aliceblue;
+  padding: 10px;
+  background: #2617ec;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(45, 17, 206);
+}
+
+.header h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color: aliceblue;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f5f5f8;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: rgb(62, 99, 221);
+  color:blue;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #1245eb;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(49, 52, 228);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(43, 13, 128);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(3, 19, 168);
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1> UEFA CHAMPIONS LEAGUE
+  </h1>
+ 
+</div>
+
+<div class="topnav">
+  <a href="https://www.uefa.com/" target="blank">UEFA WEBSITE</a>
+  <a href="https://www.uefa.com/uefachampionsleague/history/rankings/" target="blank">UCL STATS</a>
+  <a href="https://www.realmadrid.com/en" target="blank">REAL MADRID(team with the most ucl's as of right now)</a>
+  <a href="https://www.acmilan.com/en" target="blank" style="float:right">AC MILAN(team with the second most ucl's as of right now)</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Teams Who Have Qualified For R16</h2> 
+  
+      <div class="" style="height:200px;"><img src="images/round16.png" height=75%></div>
+      <p>The R16 draw has been scheduled for November 7, 2022 </p>
+      <p></p>
+    </div>
+    <div class="card">
+      <h2>Official R16 Draw</h2>
+      <div class="" style="height:200px;"><img src="images/r16draw.png" height=110% ></div>
+      
+      <ul>
+        <li> RB Leipzig x Manchester City</li>
+        <li> Club Brugge x Benfica</li>
+        <li> Liverpool x Real Madrid</li>
+        <li> AC Milan x Tottenham Hotspur</li>
+        <li> Eintracht Frankfurt x Napoli</li>
+        <li> Borussia Dortmund x Chelsea</li>
+        <li> Inter Milan x  FC Porto</li>
+        <li> Paris Saint-Germain x Bayern Munich</li>
+     </ul>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Uefa President</h2>
+      <div class="fakeimg" style="height:100px;"><img src="images/uefapres.png" height=155% ></div>
+      <p>This is Aleksander Čeferin and he is the president of UEFA</p>
+    </div>
+    <div class="card">
+      <h3>Past 3 Teams Who Won It</h3>
+      <div class=""><img src="images/realm.png" height=105></div>
+      <div class=""><img src="images/chelsea.png" height=105></div>
+      <div class=""><img src="images/bayern.png" height=105></div>
+    </div>
+    
+
+<div class="footer">
+  <h2>Walpole HighSchool Web Design</h2>
+  <p>By: Gustavo Sepulvida</p>
+</div>
+
+</body>
+</html>
